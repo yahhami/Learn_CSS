@@ -1,0 +1,23 @@
+div {
+    background-color: #d4d4d4;
+    padding: 10px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.s1 {
+    border: 5px solid red;
+    outline: 5px solid black;
+}
+.s2 {
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue #008000;
+    outline: 5px solid black;
+}
+.s3 {
+    border-width: 5px;
+    border-style: dashed;
+    border-color: red #008000 blue yellow;
+    outline: 5px solid black;
+}
