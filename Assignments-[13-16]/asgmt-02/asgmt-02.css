@@ -1,0 +1,13 @@
+div {
+    background-color: #a52a2a;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    width: fit-content;
+    max-width: 400px;
+}
+
+.t4 {
+    white-space: nowrap;
+    overflow: hidden;
+}
