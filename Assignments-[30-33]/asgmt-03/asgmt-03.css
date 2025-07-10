@@ -1,0 +1,44 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+	list-style-type: none;
+}
+
+ol {
+	padding: 5px 0 5px 35px;
+}
+
+.parent {
+	width: 400px;
+	margin: 20px auto;
+	background-color: white;
+}
+
+.html,
+.css,
+.js {
+	background-color: #eeeeee;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+.html ol li,
+.css ol li {
+	background-color: white;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+
+.js ul {
+	padding: 10px 0 0 0;
+}
+
+.js ul li {
+	background-color: white;
+	padding: 10px;
+	list-style-type: circle;
+	list-style-position: inside;
+	margin-bottom: 5px;
+}

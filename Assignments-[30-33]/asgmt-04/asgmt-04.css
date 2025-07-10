@@ -1,0 +1,69 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+table {
+	width: 700px;
+	margin: 20px auto;
+	border-collapse: collapse;
+}
+
+table,
+tr,
+th,
+td {
+	border: 1px solid white;
+}
+
+caption {
+	margin: 15px 0;
+	font-weight: bold;
+}
+
+table tr {
+	background-color: #eeeeee;
+	text-align: center;
+}
+
+table tr td {
+	padding: 15px;
+}
+
+thead tr {
+	background-color: #404040;
+}
+
+thead tr th {
+	padding: 15px;
+	color: white;
+}
+
+.last {
+	border-bottom: 2px solid #0a9689;
+}
+
+.name {
+	width: 30%;
+}
+
+img {
+	width: 50px;
+}
+
+.view {
+	padding: 5px 10px;
+	color: white;
+	background-color: #03a9f4;
+	font-weight: bold;
+}
+
+.del {
+	padding: 5px 10px;
+	color: white;
+	background-color: #e91e63;
+	font-weight: bold;
+}
