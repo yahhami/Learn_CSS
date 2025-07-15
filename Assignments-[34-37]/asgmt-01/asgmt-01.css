@@ -1,0 +1,13 @@
+div {
+	width: 600px;
+	height: 60px;
+	margin: 20px auto;
+	background-color: #eeeeee;
+	font-family: sans-serif;
+	text-align: center;
+	line-height: 60px;
+}
+
+:empty {
+	background-color: red;
+}
