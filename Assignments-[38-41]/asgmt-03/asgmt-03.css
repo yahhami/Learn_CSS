@@ -1,0 +1,97 @@
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+a {
+	display: block;
+	width: 95%;
+	padding: 10px;
+	margin: 0 auto;
+	background-color: #03a9f4;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.parent {
+	width: 550px;
+	padding: 20px;
+	margin: 20px auto;
+	overflow: hidden;
+}
+
+.pro,
+.basic {
+	width: 230px;
+	height: 300px;
+	padding: 15px;
+	background-color: #eeeeee;
+	float: left;
+	position: relative;
+}
+
+.parent .basic {
+	margin-right: 50px;
+}
+
+.parent .basic::before {
+	content: "Free";
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background-color: #dddddd;
+	font-size: 40px;
+	text-align: center;
+	line-height: 200px;
+	border-radius: 50%;
+	top: 58%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+
+.parent .basic::after {
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 100%;
+	background-color: #03a9f4;
+	top: 0;
+	right: -25px;
+}
+
+.parent .pro::before {
+	content: "Or";
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-color: #03a9f4;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	line-height: 30px;
+	border-radius: 50%;
+	top: 50%;
+	left: -11%;
+	margin-top: -15px;
+	margin-left: -15px;
+}
+
+.parent .pro::after {
+	content: "$30";
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background-color: #dddddd;
+	font-size: 40px;
+	text-align: center;
+	line-height: 200px;
+	border-radius: 50%;
+	top: 58%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -100px;
+}
