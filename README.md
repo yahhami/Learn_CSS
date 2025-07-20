@@ -1,6 +1,6 @@
 # Learn CSS
 
-## 📚 Learning Resources
+## Learning Resources
 
 Here are the resources I'm using to learn and practice CSS:
 
