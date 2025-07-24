@@ -1,0 +1,14 @@
+div {
+	display: flex;
+	width: 100px;
+	height: 100px;
+	margin: 20px auto;
+	background-color: #eeeeee;
+	color: #ff5722;
+	font-family: sans-serif;
+	font-weight: bold;
+	border-radius: 50%;
+	box-shadow: 5px 0 0 0 #ff5722, -5px 0 0 0 #03a9f4;
+	justify-content: center;
+	align-items: center;
+}
