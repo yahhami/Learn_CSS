@@ -1,0 +1,30 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+.grid {
+	display: grid;
+	width: 800px;
+	height: 400px;
+	padding: 20px;
+	margin: 20px auto;
+	background-color: #ddd;
+	grid-template-columns: auto 1fr 1fr auto;
+	grid-template-rows: 1fr auto;
+	gap: 10px;
+}
+
+.grid div {
+	display: flex;
+	background-color: #403f3f;
+	color: white;
+	font-weight: bold;
+	justify-content: center;
+	align-items: center;
+}

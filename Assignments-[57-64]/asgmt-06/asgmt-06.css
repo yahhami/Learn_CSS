@@ -1,0 +1,110 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--padding: 20px 15px;
+	--margin: 10px;
+	--content-font-size: 0.875rem;
+	--line-color: #ff2500;
+	--quote-mark-color: #b1b1b1;
+	--profession-color: #a7a19e;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+h4,
+h5,
+p {
+	padding: 0;
+	margin: 0;
+}
+
+.team-info {
+	display: grid;
+	width: 90%;
+	height: fit-content;
+	padding: 30px 40px;
+	margin: 20px auto;
+	background-color: #eee;
+	gap: 10px;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.team-info div {
+	position: relative;
+	padding: var(--padding, 20px 15px);
+}
+
+.team-info div::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	bottom: 0;
+	left: 0;
+	background-color: var(--line-color, #ff2500);
+}
+
+.team-info div::before {
+	content: "''";
+	position: absolute;
+	font-size: 50px;
+	color: var(--quote-mark-color, #b1b1b1);
+	bottom: -20px;
+	right: 10px;
+	transform: rotate(10deg);
+}
+
+.grid-col-span-2 {
+	grid-column: span 2;
+}
+
+.grid-row-span-2 {
+	grid-row: span 2;
+}
+
+.grid-row-span-3 {
+	grid-row: span 3;
+}
+
+.bg-black {
+	background-color: #000;
+	color: white;
+}
+
+.bg-white {
+	background-color: #fff;
+	color: black;
+}
+
+.full-name,
+.profession,
+.title {
+	font-weight: bold;
+}
+
+.profession {
+	color: var(--profession-color);
+}
+
+.full-name,
+.profession,
+.title,
+.content {
+	line-height: 1.6;
+}
+
+.profession,
+.title,
+.content {
+	margin-bottom: var(--margin, 10px);
+}
+
+.content {
+	font-size: var(--content-font-size, 0.875rem);
+}
