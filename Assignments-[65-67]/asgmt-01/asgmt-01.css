@@ -1,0 +1,40 @@
+* {
+	box-sizing: border-box;
+}
+
+div {
+	display: flex;
+	position: relative;
+	width: 300px;
+	height: 200px;
+	margin: 10% auto;
+	background-color: #eeeeee;
+	color: #03a9f4;
+	font-size: 3rem;
+	font-weight: bold;
+	border: 1px solid #ccc;
+	justify-content: center;
+	align-items: center;
+}
+
+div::before,
+div::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+div::before {
+	z-index: -1;
+	background-color: #03a9f4;
+	transform: scale(1.04, 1.06) rotate(-5deg);
+}
+
+div::after {
+	z-index: -2;
+	background-color: #e91e63;
+	transform: scale(1.04, 1.06) rotate(5deg);
+}
