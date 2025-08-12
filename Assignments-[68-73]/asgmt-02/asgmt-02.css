@@ -1,0 +1,49 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--bg-color: #009688;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	display: flex;
+	position: relative;
+	width: 150px;
+	padding: 20px;
+	margin: 40px auto;
+	background-color: var(--bg-color, #009688);
+	font-size: 40px;
+	font-weight: bold;
+	color: #fff;
+	justify-content: center;
+	align-content: center;
+}
+
+h1::before,
+h1::after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	top: 0;
+	transform: skewX(20deg);
+}
+
+h1::before {
+	width: 5px;
+	left: -16px;
+	background-color: #fff;
+	z-index: 1;
+}
+
+h1::after {
+	width: 100%;
+	left: -36px;
+	background-color: var(--bg-color, #009688);
+	z-index: -1;
+}

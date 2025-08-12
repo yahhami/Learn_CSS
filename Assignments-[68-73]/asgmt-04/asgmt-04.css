@@ -1,0 +1,55 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--bg-color-1: #607d8b;
+	--bg-color-2: #000;
+}
+
+body {
+	display: flex;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	justify-content: center;
+	align-items: center;
+}
+
+div {
+	width: 200px;
+	height: 200px;
+	background-color: var(--bg-color-1, #607d8b);
+	position: relative;
+}
+
+div::before {
+	display: flex;
+	content: "Elzero";
+	position: absolute;
+	width: 95%;
+	height: 0;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	bottom: 0;
+	left: 0;
+	background-color: var(--bg-color-2, #000);
+	color: #fff;
+	font-weight: 400;
+	align-items: flex-end;
+	line-height: 1.7;
+}
+
+div::after {
+	content: "";
+	position: absolute;
+	width: calc((200px / sqrt(2)) - 3px);
+	height: calc((200px / sqrt(2)) - 3px);
+	z-index: 1;
+	background-color: var(--bg-color-2, #000);
+	border-left: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	transform: rotate(-45deg);
+	transform-origin: top left;
+}
